@@ -13,8 +13,7 @@ class Solution:
         """
         if n < 1:
             return "Not enough stones"
-
+        
         if n % 4 == 0:
             return False 
-        
         return True
