@@ -5,8 +5,6 @@ class Solution:
 
         nums.sort() #we sort to prepare indexing, ensuring index 0 contains 0. 
         for i in range(len(nums)):
-            #print(i)
-            if nums[i]+1 in nums_set: # O(n) look up time 
-                pass
-            else:
+            if nums[i]+1 not in nums_set: # O(n) look up time 
                 return i+1 # return missing value
+                
