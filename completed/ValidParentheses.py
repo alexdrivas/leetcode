@@ -17,4 +17,4 @@ class Solution:
                 if stack == [] or dic[stack.pop()] != c:
                     return False
 
-        return True if stack == [] else False
+        return not stack
